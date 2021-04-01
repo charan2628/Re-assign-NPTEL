@@ -1,3 +1,21 @@
 {
-    
+  "manifest_version": 2,
+  "name": "Re:assign-NPTEL",
+  "version": "1.0",
+
+  "description": "",
+  "homepage_url": "",
+  "icons": {
+    "48": "icons/main-icon.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/main-icon.png",
+    "default_title": "Re:assign-NPTEL",
+    "default_popup": "popup/main.html"
+  }
 }
