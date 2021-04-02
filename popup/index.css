@@ -1,19 +1,67 @@
-html, body {
-    width: 200px;
-    background-color: black;
-    color: white;
-  }
-  
-  .hidden {
-    display: none;
-  }
+/* default template start */
+:root {
+    box-sizing: border-box;
+}
 
-  button {
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 1em;
+}
+/* default template end */
+
+html, body {
+    margin: 0;
+    width: max-content;
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+  
+.hidden {
+    display: none;
+}
+
+#title {
+    font-size: 1.5em;
+}
+
+#popup-content {
+    margin: 1em;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+#popup-content button {
     width: 120px;
-    margin: 0.75rem;
+    margin-top: 0;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 0.1875rem;
     outline: none;
-  }
-  
+}
+
+#popup-content button:hover {
+    background-color: #c0c0c0;
+}
+
+#popup-content button:active {
+    background-color: #c0c0c0;
+}
+
+#popup-content > button + button {
+    margin-left: 1em;
+}
+
+#error-content {
+    width: max-content;
+}
+
+#error-content {
+    margin: 1em;
+}
