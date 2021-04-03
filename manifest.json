@@ -5,9 +5,7 @@
 
   "description": "",
   "icons": {
-    "48": "icons/main-icon-48.png",
-    "32": "icons/main-icon-32.png",
-    "24": "icons/main-icon-24.png"
+    "48": "icons/main-icon.png"
   },
 
   "permissions": [
