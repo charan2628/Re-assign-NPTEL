@@ -24,7 +24,6 @@ hideAnswers.addEventListener("click", () => {
 
 //send showAnswers message which will be picked up content script
 showAnswers.addEventListener("click", () => {
-    console.log('show clicked');
     browser.tabs.query({active: true, currentWindow: true})
             .then((tabs) => {
                 browser.tabs.sendMessage(tabs[0].id, {command: "re_assign_nptel_showAnswers"});

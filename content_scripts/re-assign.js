@@ -1,9 +1,10 @@
 (function() {
 
-    if (window.hasRunReAssignNptel) {
+    const _window = window;
+    if (_window.hasRunReAssignNptel) {
         return;
     }
-    window.hasRunReAssignNptel = true;
+    _window.hasRunReAssignNptel = true;
 
     /*
     * Clears answer and add as show answer button for each quesion.
@@ -16,9 +17,9 @@
         // clear answers
         Array.prototype.forEach.call(document.querySelectorAll(".qt-feedback"),  (elem) => {
             elem.style.display = "none";
-
+            
             // create button for first button for one time and reuse it 
-            if (window.hasRunReAssignNptel) {
+            if (_window.hasRunHideAnswersReAssignNptel) {
                 Array.prototype.forEach.call(document.querySelectorAll(".re_assign_nptel_show_answer_button"), function (elem) {
                     elem.style.display = "";
                 }); 
@@ -30,10 +31,11 @@
                 showAnswerButton.onclick = function() {
                     elem.style.display = "";
                 }
-        
+                
                 elem.parentNode.insertBefore(showAnswerButton, elem);
             }
         });
+        _window.hasRunHideAnswersReAssignNptel = true
     }
 
     // Unhides the answers for all questions
