@@ -6,3 +6,9 @@ Use this extension to hide all the answers and revise.
 
 Checkout this gif to see how it works.
 ![](https://github.com/charan2628/Re-assign-NPTEL/blob/v1.0/tutorial/tutorial.gif)
+
+## Compatibility
+Firefox v48.0
+
+## Install
+Download xpi file in releases.
