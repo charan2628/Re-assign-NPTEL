@@ -3,7 +3,8 @@
   "name": "Re:assign-NPTEL",
   "version": "1.0",
 
-  "description": "",
+  "description": "Hide all the completed NPTEL assignment answers to revise.",
+  "homepage_url": "https://github.com/charan2628/Re-assign-NPTEL/tree/master",
   "icons": {
     "48": "icons/main-icon.png"
   },
